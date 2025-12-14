@@ -380,11 +380,19 @@ $$ \chi^2 = \sum \frac{(O_i - E_i)^2}{E_i} $$
     If $H_0$ is true, both groups should convert at the Global Rate (15%).
     *   Blue Expected Buys: $100 \times 0.15 = 15$ ($E_1$).
     *   Red Expected Buys: $100 \times 0.15 = 15$ ($E_2$).
+  
+| Group | Bought (E) | Didn't Buy (E) | Total |
+| :--- | :--- | :--- | :--- |
+| **Blue** | 15 | 85 | 100 |
+| **Red** | 15 | 85 | 100 |
 
 4.  **Calculate $\chi^2$:**
     *   Blue Buys: $(10 - 15)^2 / 15 = 25/15 = 1.66$
     *   Red Buys: $(20 - 15)^2 / 15 = 25/15 = 1.66$
     *   *Do the same for "Didn't Buy" cells...*
+    *   Blue didn't buy: $(90−85)^2/85 = 0.29$
+    *   Red didn't buy: $(80−85)^2/85 = 0.29$
+    *   Sum it up
     *   $\chi^2 \approx 3.92$.
 
 5.  **Compute P-Value:**
